@@ -3,7 +3,7 @@ SampleApp::Application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-
+  
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
@@ -31,7 +31,6 @@ SampleApp::Application.configure do
 
   # Generate digests for assets URLs.
   config.assets.digest = true
-
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
@@ -40,7 +39,7 @@ SampleApp::Application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Set to :debug to see everything in the log.
   config.log_level = :info
